@@ -1,3 +1,4 @@
+/*CSS Reset*/
 html, body, div, span, applet, object, iframe, table, caption, tbody, tfoot, thead, tr, th, td, 
 del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, 
 h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, 
@@ -32,11 +33,11 @@ blockquote, q {
     padding:0;
     margin:0;
     max-width:100%;
-    border: 1px solid grey;
+    /* border: 1px solid grey; */
 }
 /*General Styles*/
 html{
-    font-size:62.5%;
+    font-size:62.5%; /* 16px */
 }
 body{
     font-size:1.6rem;
@@ -50,19 +51,21 @@ h1{
 }
 section{
     padding: 4% 0;
+    width:90%;
+    margin:0 auto; /* to center everything */
 }
 a{
     text-decoration:none;
-    font-family: 'Chelsea Market', cursive;
 }
 /*Section by Section Styles*/
+
 /*Header Section Styles*/
 nav{
     padding: 2% 0;
 }
 nav a{
     display:inline-block;
-    padding: 1% 0;
+    padding: 1% 0; /* tb lr */
     width:10%;
     border-radius:10px;
     text-align: center;
@@ -83,36 +86,50 @@ nav a{
 }
 /*top section style */
 .top{
-    text-align: center;
     position:relative;
 }
 .left, .right{
     display:inline-block;
-    text-align:center;
 }
 .left{
-    width:35%;
+    width:30%;
 }
 .left img {
-    width:80%;
     border-radius:50%;
 }
 .right{
-    width:60%;
+    width:55%;
     position:absolute;
-    top:45%;
+    margin-left:5%;
     text-align:center;
+    line-height: 3;
+    top:150px;
 }
+/* middle section styles */
+.middle{
+    background-color:#DDB9A3;
+    color:white;
+    padding:2%;
+}
+/*last section styles*/
+.last div{
+    width:30%;
+    margin:5% auto;
+}
+.bold{
+    font-weight:bold;
+}
+/* Image section style */
 .empty{
     background-image: url("assets/footer_img.jpg");
     height: 50vh;
     background-size:cover;
     background-repeat:no-repeat;
+    background-position:top center;
+    width:100%;
 }
-span{
-    font-family: 'Roboto Mono', monospace;
-    font-weight:bold;
-}
-.fireplace, .campervan{
-    text-align:center;
+/* footer section style */
+
+footer{
+    background-color:#F9E7DC;
 }
